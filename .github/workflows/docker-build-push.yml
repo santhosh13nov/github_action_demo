@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_TOKEN}}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/my-repo-name:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/my-repo-1:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME}}/my-repo:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME}}/my-repo-1:latest
